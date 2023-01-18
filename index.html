@@ -1,20 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Lars Hjermind McCall</title>
 		<style>
-			@font-face {
-				font-family: "Purple Smile";
-				src: url('Purple Smile.ttf');
+		    @font-face {
+		        font-family: "Roboto";
+		        src: url("Roboto-Regular.ttf");
+		    }
+			p {
+			    font-family: "Roboto";
+			    font-weight: bold;
+			    color: red;
+			    text-shadow: 0 0 4px red;
+			    user-select: none;
+			    font-size: 5em;
+			    text-align: center;
 			}
-			* {font-family:"Purple Smile";}
+			#mid {
+			    text-decoration: none;
+			    cursor: pointer;
+			    transition: 0.15s ease;
+			}
+			#mid:hover {
+			    color: blue;
+			    text-shadow: 0 0 4px blue;
+			}
 		</style>
 	</head>
 	<body>
-		<h1>Lars Hjermind McCall</h1>
-		<h2>About Me</h2>
-		<p>Hi, my name is Lars Hjermind McCall, and I am a certified jew. I often play with my toes before I go to sleep because it relaxes me. My best friend, Preston Ray Cordell, supports me through everything I go through. With all of his calming messages, "You can do it, Lars!", "Keep going!", "I'am almost done!", I'm sure he knows he is my favorite person.<br>Since this is my About Me, I'd like to share all of my knitty-gritty details about my life. Including the ones with my hot sister. She is just such a baddie, and I will never forget our experiences together. I hate it when she goes to Denmark to go to college and gets insanely stoned because I'm not there with her.</p>
-		<h2>Some Pictures of Me</h2>
-		<p>This is my favorite collection of images, and also to tip the chef, Preston Ray Cordell took almost half of these pictures!</p>
+		<p>Lars <span id="mid" onclick="middle()">Hjermind</span> McCall</p>
+		<script>
+		    var switched = false;
+		    function middle() {
+		        if (switched == false) {
+		            document.getElementById("mid").innerHTML = "Yahman";
+		            switched = true;
+		        } else {
+		            document.getElementById("mid").innerHTML = "Hjermind";
+		            switched = false;
+		        }
+		    }
+		</script>
 	</body>
 </html>
