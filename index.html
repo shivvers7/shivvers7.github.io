@@ -1,47 +1,34 @@
 <!DOCTYPE html>
-<html lang="en-US">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Lars Hjermind McCall</title>
+<html lang="en">
+  <head>
+    <title>Lars Hjermind McCall</title>
 		<style>
-		    @font-face {
-		        font-family: "Roboto";
-		        src: url("Roboto-Regular.ttf");
-		    }
+			body {
+				background: red;
+			}
 			p {
-			    font-family: "Roboto";
-			    font-weight: bold;
-			    color: red;
-			    text-shadow: 0 0 4px red;
-			    user-select: none;
-			    font-size: 5em;
-			    text-align: center;
+				font: bold 64px Roboto;
+				color: #C00000;
+				text-shadow: 0 0 6px #C00000;
+				user-select: none;
+				margin: 0;
 			}
-			#mid {
-			    text-decoration: none;
-			    cursor: pointer;
-			    transition: 0.15s ease;
+			.increased {
+				color: #a00000;
+				text-shadow: 0 0 6px #a00000;
+				font-size: 1.2em;
 			}
-			#mid:hover {
-			    color: blue;
-			    text-shadow: 0 0 4px blue;
+			a {
+					color: #a00000;
+			}
+			.symbol {
+					font-size: 0.8em;
+					vertical-align: top;
 			}
 		</style>
 	</head>
 	<body>
-		<p>Lars <span id="mid" onclick="middle()">Hjermind</span> McCall</p>
-		<script>
-		    var switched = false;
-		    function middle() {
-		        if (switched == false) {
-		            document.getElementById("mid").innerHTML = "Yahman";
-		            switched = true;
-		        } else {
-		            document.getElementById("mid").innerHTML = "Hjermind";
-		            switched = false;
-		        }
-		    }
-		</script>
+		<p>If you are looking at this, your name is <span class="increased">Lars Hjermind McCall</span>. You have recently unlocked the <span class="increased">Gaz operator</span> from <span class="increased">Call of Duty<span class="symbol">&#174;</span> | Modern Warfare<span class="symbol">&#174;</span> II</span>. You have also recently lost admin for a <span class="increased">Discord server</span> that nobody cares about. If you are currently suffering from depression, click <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">here</a>.</p>
 	</body>
 </html>
+
